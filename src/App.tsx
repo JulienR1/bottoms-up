@@ -18,11 +18,23 @@ function App() {
   const [scale, setScale] = useState(1);
 
   return (
-    <main className="flex gap-4">
+    <main className="flex gap-4 h-[100vh] overflow-hidden">
       <Sidebar recipes={recipes} />
       <div className="flex flex-grow flex-col">
-        <ScaleSelector scale={scale} setScale={setScale} />
-        {recipe && <Recipe {...recipe} scale={scale} />}
+        <div className="grid items-center text-lg grid-cols-[11rem_1fr_11rem]">
+          <h1
+            className="whitespace-nowrap overflow-x-hidden text-ellipsis"
+            style={{ fontVariant: "small-caps" }}
+          >
+            {recipe?.label ?? ""}
+          </h1>
+          <div className="flex-grow">
+            <ScaleSelector scale={scale} setScale={setScale} />
+          </div>
+        </div>
+        <div className="overflow-y-auto">
+          {recipe && <Recipe {...recipe} scale={scale} />}
+        </div>
       </div>
     </main>
   );
@@ -44,7 +56,7 @@ function Sidebar({ recipes }: { recipes: Array<Recipe> }) {
   }, [location.pathname]);
 
   return (
-    <aside className="h-[100vh] overflow-y-auto">
+    <aside className="h-[100vh] overflow-y-auto flex-shrink-0">
       <div className="p-2">
         <label htmlFor="recipe-search" className="block">
           Filtrer:
@@ -131,13 +143,22 @@ function ScaleSelector({
   );
 }
 
-function Recipe({ scale, ingredients, steps }: Recipe & { scale?: number }) {
+function Recipe({
+  scale,
+  ingredients,
+  steps,
+  img,
+}: Recipe & { scale?: number }) {
   scale ??= 1;
 
   return (
-    <div>
+    <div className="flex gap-8 justify-center my-8 items-center">
+      <figure className="w-44 h-44 overflow-hidden relative">
+        <img className="block" src={img} />
+      </figure>
+
       <div>
-        <h3>Ingrédients</h3>
+        <h3 className="font-semibold underline text-lg">Ingrédients</h3>
         <ul>
           {ingredients.map((ingredient) => (
             <li key={ingredient.label}>
@@ -152,8 +173,8 @@ function Recipe({ scale, ingredients, steps }: Recipe & { scale?: number }) {
       </div>
 
       <div>
-        <h3>Étapes</h3>
-        <ol>
+        <h3 className="font-semibold underline text-lg">Étapes</h3>
+        <ol className="list-decimal list-inside">
           {steps.map((step, i) => (
             <li key={i}>{step}</li>
           ))}
