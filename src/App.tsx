@@ -1,6 +1,5 @@
 import clsx, { ClassValue } from "clsx";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { NavLink, useLocation, useParams } from "react-router";
 import { twMerge } from "tailwind-merge";
 import recipes from "./recipes";
 
@@ -12,14 +11,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 function App() {
-  const params = useParams<{ recipe: string }>();
-  const recipe = recipes.find((r) => r.label === params.recipe);
-
+  const [recipe, setRecipe] = useState<Recipe | null>(null);
   const [scale, setScale] = useState(1);
 
   return (
     <main className="flex gap-4 h-[100vh] overflow-hidden">
-      <Sidebar recipes={recipes} />
+      <Sidebar recipe={recipe} recipes={recipes} selectRecipe={setRecipe} />
       <div className="flex flex-grow flex-col">
         <div className="grid items-center text-lg grid-cols-[20rem_1fr_20rem]">
           <h1
@@ -51,9 +48,16 @@ type Recipe = {
   img: string;
 };
 
-function Sidebar({ recipes }: { recipes: Array<Recipe> }) {
+function Sidebar({
+  recipe,
+  recipes,
+  selectRecipe,
+}: {
+  recipe: Recipe | null;
+  recipes: Array<Recipe>;
+  selectRecipe: (recipe: Recipe) => void;
+}) {
   const [search, setSearch] = useState("");
-  const location = useLocation();
 
   useEffect(() => {
     setSearch("");
@@ -77,27 +81,25 @@ function Sidebar({ recipes }: { recipes: Array<Recipe> }) {
       <ul className="grid gap-4 justify-center">
         {recipes
           .filter((r) => r.label.toLowerCase().includes(search.toLowerCase()))
-          .map((recipe) => (
-            <li key={recipe.label}>
-              <NavLink
-                to={"/" + recipe.label}
-                className={({ isActive }) =>
-                  cn(
-                    "rounded shadow block w-32 h-36 hover:shadow-slate-400 transition-all overflow-hidden whitespace-nowrap",
-                    isActive && "font-bold bg-red-400",
-                  )
-                }
+          .map((r) => (
+            <li key={r.label}>
+              <button
+                onClick={() => selectRecipe(r)}
+                className={cn(
+                  "rounded shadow block w-32 h-36 hover:shadow-slate-400 transition-all overflow-hidden whitespace-nowrap",
+                  recipe?.label === r.label && "font-bold bg-red-400",
+                )}
               >
                 <p className="text-center w-11/12 mx-auto overflow-x-hidden text-ellipsis">
-                  {recipe.label}
+                  {r.label}
                 </p>
                 <div className="overflow-hidden">
                   <img
-                    src={recipe.img}
+                    src={r.img}
                     className="aspect-square hover:scale-110 transition-all"
                   />
                 </div>
-              </NavLink>
+              </button>
             </li>
           ))}
       </ul>
