@@ -1,102 +1,411 @@
 [
     {
-        "label": "Rhum & Coke",
+        "label": "Classic Eggnog Cocktail",
         "ingredients": [
             {
-                "label": "Coke",
-                "quantity": 1,
-                "unit": "canne"
+                "label": "bourbon or rum",
+                "quantity": 2,
+                "unit": "oz"
             },
             {
-                "label": "Rhum",
+                "label": "eggnog",
+                "quantity": 4,
+                "unit": "oz"
+            },
+            {
+                "label": "nutmeg",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "Fill a shaker with ice, add the eggnog and bourbon/rum.",
+            "Shake well and strain into a chilled glass.",
+            "Garnish with a sprinkle of nutmeg."
+        ],
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8LYVchC4MBJUG8TH1jLrjFUByY8foBPBgw&s"
+    },
+    {
+        "label": "Spiked Eggnog Latte",
+        "ingredients": [
+            {
+                "label": "Kahlúa",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "Irish cream liqueur (Baileys)",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "eggnog",
+                "quantity": 3,
+                "unit": "oz"
+            },
+            {
+                "label": "espresso",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "whipped cream",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "Combine the coffee liqueur, Irish cream, and eggnog in a shaker with ice.",
+            "Shake and pour into a glass. Add espresso for a stronger coffee flavor.",
+            "Top with whipped cream and a dash of cinnamon."
+        ],
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXr21qp-udmBtSwcuedsrm5qCSb19DJLXkA&s"
+    },
+    {
+        "label": "Peppermint Eggnog Martini",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "eggnog",
+                "quantity": 4,
+                "unit": "oz"
+            },
+            {
+                "label": "peppermint schnapps",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "crushed candy canes",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "            Rim a martini glass with crushed candy canes.",
+            "Shake vodka, eggnog, and peppermint schnapps with ice.",
+            "Strain into the prepared glass."
+        ],
+        "img": "https://www.thekitchenmagpie.com/wp-content/uploads/images/2013/11/pepperminteggnogmartini1.jpg"
+    },
+    {
+        "label": "Root Beer Eggnog Float",
+        "ingredients": [
+            {
+                "label": "eggnog",
+                "quantity": 3,
+                "unit": "oz"
+            },
+            {
+                "label": "spiced rum",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "root beer",
+                "quantity": 4,
+                "unit": "oz"
+            },
+            {
+                "label": "vanilla ice cream",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "Pour eggnog and rum into a tall glass.",
+            "Add root beer slowly to prevent fizz overflow.",
+            "Top with a scoop of vanilla ice cream for extra decadence."
+        ],
+        "img": "https://irepo.primecp.com/2015/07/226546/Old-Fashioned-Root-Beer-Float_Category-CategoryPageDefault_ID-1068582.jpg?v=1068582"
+    },
+    {
+        "label": "Amaretto Sour Recipe",
+        "ingredients": [
+            {
+                "label": "amaretto",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "fresh lemon juice",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "simple syrup",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "egg white",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "ice",
+                "quantity": 0,
+                "unit": ""
+            },
+            {
+                "label": "lemon wheel and cherry",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "Prepare the shaker: Add the amaretto, lemon juice, simple syrup, and egg white (if using) to a shaker without ice.",
+            "Dry shake: Shake vigorously for about 10 seconds to emulsify the egg white.",
+            "Add ice and shake again: Fill the shaker with ice and shake for another 10–15 seconds.",
+            "Strain and serve: Strain into a rocks glass over fresh ice.",
+            "Garnish: Add a lemon wheel and a cherry for the perfect finishing touch."
+        ],
+        "img": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-11-Amaretto-Sour%2Famaretto-sour-1"
+    },
+    {
+        "label": "Espresso martini",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "Kahlúa",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "espresso",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "simple syrup",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "ice",
+                "quantity": 0,
+                "unit": ""
+            },
+            {
+                "label": "coffee beans",
+                "quantity": 3,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "            Prepare the shaker: Fill a cocktail shaker with ice.",
+            "Add ingredients: Pour in the vodka, coffee liqueur, espresso, pinch of salt and simple syrup.",
+            "Shake: Shake vigorously for 15–20 seconds to create a frothy layer.",
+            "Strain and serve: Double strain into a chilled martini glass.",
+            "Garnish: Float 3 coffee beans on top as a finishing touch."
+        ],
+        "img": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/14d0bba427b9bb15e74bbb61fb473aa3/Derivates/dd51587354f50beebd48fc22bec8f433338196fe.jpg"
+    },
+    {
+        "label": "Classic Moscow Mule Recipe",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "fresh lime juice",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "ginger beer (chilled)",
+                "quantity": 4,
+                "unit": "oz"
+            },
+            {
+                "label": "ice",
+                "quantity": 0,
+                "unit": ""
+            },
+            {
+                "label": "lime wedges and mint sprig",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "        Prepare the mug: Fill a copper mug (or glass) with ice.",
+            "Add vodka and lime juice: Pour in the vodka and freshly squeezed lime juice.",
+            "Top with ginger beer: Fill the mug with chilled ginger beer and stir gently to combine.",
+            "Garnish: Add a lime wedge and a mint sprig for a refreshing touch. "
+        ],
+        "img": "https://www.acouplecooks.com/wp-content/uploads/2019/06/Moscow-Mule-062.jpg"
+    },
+    {
+        "label": "Cranberry Moscow Mule",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "cranberry juice",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "fresh lime juice",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "ginger beer (chilled)",
+                "quantity": 4,
+                "unit": "oz"
+            },
+            {
+                "label": "ice",
+                "quantity": 0,
+                "unit": ""
+            },
+            {
+                "label": "lime wedges and mint sprig",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "            Fill the mug: Add ice to a copper mug or your favorite glass.",
+            "Pour the vodka and juices: Add vodka, cranberry juice, and lime juice. Stir gently.",
+            "Top with ginger beer: Pour in the chilled ginger beer and give it a light stir.",
+            "Garnish: Decorate with a handful of fresh cranberries, a lime wedge, and a rosemary sprig for a festive touch."
+        ],
+        "img": "https://happykitchen.rocks/wp-content/uploads/2017/12/Cranberry-Moscow-Mule-in-Copper-Mugs-1.jpg"
+    },
+    {
+        "label": "Peppermint White Russian",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 1.5,
+                "unit": "oz"
+            },
+            {
+                "label": "Kahlúa",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "peppermint schnapps",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "heavy cream or milk",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "ice",
+                "quantity": 0,
+                "unit": ""
+            },
+            {
+                "label": "crushed candy canes or whipped cream",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "            Prepare your glass: Rim a rocks glass with crushed candy canes (optional) and fill it with ice.",
+            "Mix the spirits: Pour vodka, coffee liqueur, and peppermint schnapps over the ice.",
+            "Add cream: Gently pour the heavy cream over the top and stir lightly.",
+            "Garnish: Top with whipped cream, sprinkle crushed candy canes, or add a peppermint stick for decoration."
+        ],
+        "img": "https://happykitchen.rocks/wp-content/uploads/2017/12/Cranberry-Moscow-Mule-in-Copper-Mugs-1.jpg"
+    },
+    {
+        "label": "Clover club cocktail",
+        "ingredients": [
+            {
+                "label": "gin",
                 "quantity": 1.25,
                 "unit": "oz"
             },
             {
-                "label": "Glace",
-                "quantity": 4,
-                "unit": "cubes"
+                "label": "lemon juice",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "raspberry syrup",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "egg white",
+                "quantity": 1,
+                "unit": ""
             }
         ],
         "steps": [
-            "Mettre la glace dans un verre.",
-            "Ajouter le rhum.",
-            "Remplir de coke."
+            "Dry shake ingredients to emulsify",
+            "Add ice",
+            "Shake and served straight up"
         ],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/15-09-26-RalfR-WLC-0126.jpg/250px-15-09-26-RalfR-WLC-0126.jpg"
     },
     {
-        "label": "1",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "2",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "3",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "4",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "5",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "6",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "7",
-        "ingredients": [],
-        "steps": [],
-        "img": "https://images.ricardocuisine.com/services/recipes/7853-1519923100.jpg"
-    },
-    {
-        "label": "Cuba libre alfdjal kjfalkdfjakl jfalksjdfalkjfd",
+        "label": "Cantarino",
         "ingredients": [
             {
-                "label": "Coke",
-                "quantity": 1,
-                "unit": "canne"
+                "label": "tequila",
+                "quantity": 2,
+                "unit": "oz"
             },
             {
-                "label": "Rhum",
+                "label": "lime juice",
                 "quantity": 1,
                 "unit": "oz"
             },
             {
-                "label": "Glace",
-                "quantity": 4,
-                "unit": "cubes"
+                "label": "orange juice",
+                "quantity": 1,
+                "unit": "oz"
             },
             {
-                "label": "Lime",
+                "label": "grapefruit juice",
                 "quantity": 1,
-                "unit": "tranche"
+                "unit": "oz"
+            },
+            {
+                "label": "salt",
+                "quantity": 1,
+                "unit": "pinch"
+            },
+            {
+                "label": "grapefruit soda",
+                "quantity": 0,
+                "unit": "to fill"
+            },
+            {
+                "label": "chili powder",
+                "quantity": 0,
+                "unit": "rim the cup"
             }
         ],
         "steps": [
-            "Mettre la glace dans un verre.",
-            "Écrapou la lime dans le verre et y laisser la tranche.",
-            "Ajouter le rhum.",
-            "Remplir de coke."
+            "            Rim the Cup: Rub a lime wedge around the edge of the clay cup and dip it in salt or chili powder.",
+            "Mix: Add tequila, fresh citrus juices, and a bit of salt to the cup.",
+            "Top with Soda: Fill the rest of the cup with grapefruit soda.",
+            "Serve: Garnish as desired, add plenty of ice, and enjoy!"
         ],
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPQoTXOKdFuzZ-K_PTADZjO5YGr2-8GnAm0g&s"
+        "img": "https://www.muydelish.com/wp-content/uploads/2022/02/cantarito.jpg"
     }
 ]

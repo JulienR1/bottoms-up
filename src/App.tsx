@@ -21,7 +21,7 @@ function App() {
     <main className="flex gap-4 h-[100vh] overflow-hidden">
       <Sidebar recipes={recipes} />
       <div className="flex flex-grow flex-col">
-        <div className="grid items-center text-lg grid-cols-[11rem_1fr_11rem]">
+        <div className="grid items-center text-lg grid-cols-[20rem_1fr_20rem]">
           <h1
             className="whitespace-nowrap overflow-x-hidden text-ellipsis"
             style={{ fontVariant: "small-caps" }}
@@ -42,7 +42,11 @@ function App() {
 
 type Recipe = {
   label: string;
-  ingredients: Array<{ label: string; quantity: number; unit: string }>;
+  ingredients: Array<{
+    label: string;
+    quantity: number | string;
+    unit: string;
+  }>;
   steps: Array<string>;
   img: string;
 };
@@ -120,7 +124,7 @@ function ScaleSelector({
         <input
           value={scale}
           className="w-12 text-center font-medium text-lg block"
-          onChange={(e) => setScale(parseInt(e.currentTarget.value))}
+          onChange={(e) => setScale(parseFloat(e.currentTarget.value))}
         />
         <button
           className="text-lg p-2"
@@ -137,7 +141,7 @@ function ScaleSelector({
         step={1}
         className="w-24"
         value={scale}
-        onChange={(e) => setScale(parseInt(e.currentTarget.value))}
+        onChange={(e) => setScale(parseFloat(e.currentTarget.value))}
       />
     </div>
   );
@@ -153,19 +157,20 @@ function Recipe({
 
   return (
     <div className="flex gap-8 justify-center my-8 items-center">
-      <figure className="w-44 h-44 overflow-hidden relative">
+      <figure className="w-44 h-44 overflow-hidden relative flex-shrink-0">
         <img className="block" src={img} />
       </figure>
 
-      <div>
+      <div className="flex-shrink-0">
         <h3 className="font-semibold underline text-lg">Ingrédients</h3>
         <ul>
           {ingredients.map((ingredient) => (
             <li key={ingredient.label}>
-              <span>{ingredient.label}</span>
+              <span className="capitalize">{ingredient.label}</span>
               <span> - </span>
               <span className={scale > 1 ? "font-bold" : ""}>
-                {ingredient.quantity * scale} {ingredient.unit}
+                {parseFloat(ingredient.quantity.toString()) * scale}
+                {ingredient.unit}
               </span>
             </li>
           ))}
