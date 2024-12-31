@@ -61,20 +61,29 @@ function Sidebar({
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <aside className="h-[100vh] overflow-y-auto flex-shrink-0">
-      {collapsed === true && (
-        <div className="block sm:hidden ml-2">
-          <button onClick={() => setCollapsed(false)}>
-            <div className="flex flex-col gap-1">
-              <div className="w-4 h-1 bg-slate-300 rounded"></div>
-              <div className="w-4 h-1 bg-slate-300 rounded"></div>
-              <div className="w-4 h-1 bg-slate-300 rounded"></div>
-            </div>
-          </button>
-        </div>
-      )}
-      {collapsed === false && (
-        <>
+    <>
+      <div
+        className={cn(
+          "absolute h-[100vh] w-[100vw] md:hidden",
+          collapsed && "hidden",
+        )}
+        onClick={() => setCollapsed(true)}
+      />
+
+      <aside className="h-[100vh] overflow-y-auto flex-shrink-0 z-10 bg-white">
+        {collapsed === true && (
+          <div className="block md:hidden ml-2">
+            <button onClick={() => setCollapsed(false)}>
+              <div className="flex flex-col gap-1">
+                <div className="w-4 h-1 bg-slate-300 rounded"></div>
+                <div className="w-4 h-1 bg-slate-300 rounded"></div>
+                <div className="w-4 h-1 bg-slate-300 rounded"></div>
+              </div>
+            </button>
+          </div>
+        )}
+
+        <div className={cn(collapsed ? "hidden md:block" : "block")}>
           <div className="p-2 flex">
             <div>
               <label htmlFor="recipe-search" className="block">
@@ -88,7 +97,7 @@ function Sidebar({
                 className="border-slate-200 border-[1px] rounded w-44"
               />
             </div>
-            <div className="block sm:hidden">
+            <div className="block md:hidden">
               <button className="px-2" onClick={() => setCollapsed(true)}>
                 X
               </button>
@@ -122,9 +131,9 @@ function Sidebar({
                 </li>
               ))}
           </ul>
-        </>
-      )}
-    </aside>
+        </div>
+      </aside>
+    </>
   );
 }
 
