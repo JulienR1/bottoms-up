@@ -1,5 +1,5 @@
 import clsx, { ClassValue } from "clsx";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import recipes from "./recipes";
 
@@ -18,7 +18,7 @@ function App() {
     <main className="flex gap-4 h-[100vh] overflow-hidden">
       <Sidebar recipe={recipe} recipes={recipes} selectRecipe={setRecipe} />
       <div className="flex flex-grow flex-col">
-        <div className="grid items-center text-lg grid-cols-[20rem_1fr_20rem]">
+        <div className="grid items-center text-lg grid-cols-[1fr_2fr_1fr] md:grid-cols-[20rem_1fr_20rem]">
           <h1
             className="whitespace-nowrap overflow-x-hidden text-ellipsis"
             style={{ fontVariant: "small-caps" }}
@@ -58,51 +58,72 @@ function Sidebar({
   selectRecipe: (recipe: Recipe) => void;
 }) {
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    setSearch("");
-  }, [location.pathname]);
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <aside className="h-[100vh] overflow-y-auto flex-shrink-0">
-      <div className="p-2">
-        <label htmlFor="recipe-search" className="block">
-          Filtrer:
-        </label>
-        <input
-          id="recipe-search"
-          type="search"
-          value={search}
-          onChange={(e) => setSearch(e.currentTarget.value)}
-          className="border-slate-200 border-[1px] rounded w-44"
-        />
-      </div>
-
-      <ul className="grid gap-4 justify-center">
-        {recipes
-          .filter((r) => r.label.toLowerCase().includes(search.toLowerCase()))
-          .map((r) => (
-            <li key={r.label}>
-              <button
-                onClick={() => selectRecipe(r)}
-                className={cn(
-                  "rounded shadow block w-32 h-36 hover:shadow-slate-400 transition-all overflow-hidden whitespace-nowrap",
-                  recipe?.label === r.label && "font-bold bg-red-400",
-                )}
-              >
-                <p className="text-center w-11/12 mx-auto overflow-x-hidden text-ellipsis">
-                  {r.label}
-                </p>
-                <div className="overflow-hidden">
-                  <img
-                    src={r.img}
-                    className="aspect-square hover:scale-110 transition-all"
-                  />
-                </div>
+      {collapsed === true && (
+        <div className="block sm:hidden ml-2">
+          <button onClick={() => setCollapsed(false)}>
+            <div className="flex flex-col gap-1">
+              <div className="w-4 h-1 bg-slate-300 rounded"></div>
+              <div className="w-4 h-1 bg-slate-300 rounded"></div>
+              <div className="w-4 h-1 bg-slate-300 rounded"></div>
+            </div>
+          </button>
+        </div>
+      )}
+      {collapsed === false && (
+        <>
+          <div className="p-2 flex">
+            <div>
+              <label htmlFor="recipe-search" className="block">
+                Filtrer:
+              </label>
+              <input
+                id="recipe-search"
+                type="search"
+                value={search}
+                onChange={(e) => setSearch(e.currentTarget.value)}
+                className="border-slate-200 border-[1px] rounded w-44"
+              />
+            </div>
+            <div className="block sm:hidden">
+              <button className="px-2" onClick={() => setCollapsed(true)}>
+                X
               </button>
-            </li>
-          ))}
-      </ul>
+            </div>
+          </div>
+
+          <ul className="grid gap-4 justify-center">
+            {recipes
+              .filter((r) =>
+                r.label.toLowerCase().includes(search.toLowerCase()),
+              )
+              .map((r) => (
+                <li key={r.label}>
+                  <button
+                    onClick={() => selectRecipe(r)}
+                    className={cn(
+                      "rounded shadow block w-32 h-36 hover:shadow-slate-400 transition-all overflow-hidden whitespace-nowrap",
+                      recipe?.label === r.label && "font-bold bg-red-400",
+                    )}
+                  >
+                    <p className="text-center w-11/12 mx-auto overflow-x-hidden text-ellipsis">
+                      {r.label}
+                    </p>
+                    <div className="overflow-hidden">
+                      <img
+                        src={r.img}
+                        className="aspect-square hover:scale-110 transition-all"
+                      />
+                    </div>
+                  </button>
+                </li>
+              ))}
+          </ul>
+        </>
+      )}
     </aside>
   );
 }
@@ -158,7 +179,7 @@ function Recipe({
   scale ??= 1;
 
   return (
-    <div className="flex gap-8 justify-center my-8 items-center">
+    <div className="flex gap-8 flex-col md:flex-row justify-center my-8 md:items-center pr-8 md:pr-0">
       <figure className="w-44 h-44 overflow-hidden relative flex-shrink-0">
         <img className="block" src={img} />
       </figure>
