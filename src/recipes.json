@@ -23,7 +23,11 @@
             "Shake well and strain into a chilled glass.",
             "Garnish with a sprinkle of nutmeg."
         ],
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8LYVchC4MBJUG8TH1jLrjFUByY8foBPBgw&s"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8LYVchC4MBJUG8TH1jLrjFUByY8foBPBgw&s",
+        "tags": [
+            "eggnog",
+            "rum"
+        ]
     },
     {
         "label": "Spiked Eggnog Latte",
@@ -59,7 +63,11 @@
             "Shake and pour into a glass. Add espresso for a stronger coffee flavor.",
             "Top with whipped cream and a dash of cinnamon."
         ],
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXr21qp-udmBtSwcuedsrm5qCSb19DJLXkA&s"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXr21qp-udmBtSwcuedsrm5qCSb19DJLXkA&s",
+        "tags": [
+            "eggnog",
+            "coffee"
+        ]
     },
     {
         "label": "Peppermint Eggnog Martini",
@@ -86,11 +94,14 @@
             }
         ],
         "steps": [
-            "            Rim a martini glass with crushed candy canes.",
+            "Rim a martini glass with crushed candy canes.",
             "Shake vodka, eggnog, and peppermint schnapps with ice.",
             "Strain into the prepared glass."
         ],
-        "img": "https://www.thekitchenmagpie.com/wp-content/uploads/images/2013/11/pepperminteggnogmartini1.jpg"
+        "img": "https://www.thekitchenmagpie.com/wp-content/uploads/images/2013/11/pepperminteggnogmartini1.jpg",
+        "tags": [
+            "eggnog"
+        ]
     },
     {
         "label": "Root Beer Eggnog Float",
@@ -121,7 +132,11 @@
             "Add root beer slowly to prevent fizz overflow.",
             "Top with a scoop of vanilla ice cream for extra decadence."
         ],
-        "img": "https://irepo.primecp.com/2015/07/226546/Old-Fashioned-Root-Beer-Float_Category-CategoryPageDefault_ID-1068582.jpg?v=1068582"
+        "img": "https://irepo.primecp.com/2015/07/226546/Old-Fashioned-Root-Beer-Float_Category-CategoryPageDefault_ID-1068582.jpg?v=1068582",
+        "tags": [
+            "eggnog",
+            "rum"
+        ]
     },
     {
         "label": "Amaretto Sour Recipe",
@@ -164,7 +179,10 @@
             "Strain and serve: Strain into a rocks glass over fresh ice.",
             "Garnish: Add a lemon wheel and a cherry for the perfect finishing touch."
         ],
-        "img": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-11-Amaretto-Sour%2Famaretto-sour-1"
+        "img": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2021-11-Amaretto-Sour%2Famaretto-sour-1",
+        "tags": [
+            "amaretto"
+        ]
     },
     {
         "label": "Espresso martini",
@@ -201,13 +219,17 @@
             }
         ],
         "steps": [
-            "            Prepare the shaker: Fill a cocktail shaker with ice.",
+            "Prepare the shaker: Fill a cocktail shaker with ice.",
             "Add ingredients: Pour in the vodka, coffee liqueur, espresso, pinch of salt and simple syrup.",
             "Shake: Shake vigorously for 15–20 seconds to create a frothy layer.",
             "Strain and serve: Double strain into a chilled martini glass.",
             "Garnish: Float 3 coffee beans on top as a finishing touch."
         ],
-        "img": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/14d0bba427b9bb15e74bbb61fb473aa3/Derivates/dd51587354f50beebd48fc22bec8f433338196fe.jpg"
+        "img": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/14d0bba427b9bb15e74bbb61fb473aa3/Derivates/dd51587354f50beebd48fc22bec8f433338196fe.jpg",
+        "tags": [
+            "vodka",
+            "coffee"
+        ]
     },
     {
         "label": "Classic Moscow Mule Recipe",
@@ -239,12 +261,15 @@
             }
         ],
         "steps": [
-            "        Prepare the mug: Fill a copper mug (or glass) with ice.",
+            "Prepare the mug: Fill a copper mug (or glass) with ice.",
             "Add vodka and lime juice: Pour in the vodka and freshly squeezed lime juice.",
             "Top with ginger beer: Fill the mug with chilled ginger beer and stir gently to combine.",
             "Garnish: Add a lime wedge and a mint sprig for a refreshing touch. "
         ],
-        "img": "https://www.acouplecooks.com/wp-content/uploads/2019/06/Moscow-Mule-062.jpg"
+        "img": "https://www.acouplecooks.com/wp-content/uploads/2019/06/Moscow-Mule-062.jpg",
+        "tags": [
+            "vodka"
+        ]
     },
     {
         "label": "Cranberry Moscow Mule",
@@ -281,12 +306,15 @@
             }
         ],
         "steps": [
-            "            Fill the mug: Add ice to a copper mug or your favorite glass.",
+            "Fill the mug: Add ice to a copper mug or your favorite glass.",
             "Pour the vodka and juices: Add vodka, cranberry juice, and lime juice. Stir gently.",
             "Top with ginger beer: Pour in the chilled ginger beer and give it a light stir.",
             "Garnish: Decorate with a handful of fresh cranberries, a lime wedge, and a rosemary sprig for a festive touch."
         ],
-        "img": "https://happykitchen.rocks/wp-content/uploads/2017/12/Cranberry-Moscow-Mule-in-Copper-Mugs-1.jpg"
+        "img": "https://happykitchen.rocks/wp-content/uploads/2017/12/Cranberry-Moscow-Mule-in-Copper-Mugs-1.jpg",
+        "tags": [
+            "vodka"
+        ]
     },
     {
         "label": "Peppermint White Russian",
@@ -323,12 +351,16 @@
             }
         ],
         "steps": [
-            "            Prepare your glass: Rim a rocks glass with crushed candy canes (optional) and fill it with ice.",
+            "Prepare your glass: Rim a rocks glass with crushed candy canes (optional) and fill it with ice.",
             "Mix the spirits: Pour vodka, coffee liqueur, and peppermint schnapps over the ice.",
             "Add cream: Gently pour the heavy cream over the top and stir lightly.",
             "Garnish: Top with whipped cream, sprinkle crushed candy canes, or add a peppermint stick for decoration."
         ],
-        "img": "https://happykitchen.rocks/wp-content/uploads/2017/12/Cranberry-Moscow-Mule-in-Copper-Mugs-1.jpg"
+        "img": "https://happykitchen.rocks/wp-content/uploads/2017/12/Cranberry-Moscow-Mule-in-Copper-Mugs-1.jpg",
+        "tags": [
+            "vodka",
+            "coffee"
+        ]
     },
     {
         "label": "Clover club cocktail",
@@ -359,7 +391,10 @@
             "Add ice",
             "Shake and served straight up"
         ],
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/15-09-26-RalfR-WLC-0126.jpg/250px-15-09-26-RalfR-WLC-0126.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/15-09-26-RalfR-WLC-0126.jpg/250px-15-09-26-RalfR-WLC-0126.jpg",
+        "tags": [
+            "gin"
+        ]
     },
     {
         "label": "Cantarino",
@@ -401,12 +436,15 @@
             }
         ],
         "steps": [
-            "            Rim the Cup: Rub a lime wedge around the edge of the clay cup and dip it in salt or chili powder.",
+            "Rim the Cup: Rub a lime wedge around the edge of the clay cup and dip it in salt or chili powder.",
             "Mix: Add tequila, fresh citrus juices, and a bit of salt to the cup.",
             "Top with Soda: Fill the rest of the cup with grapefruit soda.",
             "Serve: Garnish as desired, add plenty of ice, and enjoy!"
         ],
-        "img": "https://www.muydelish.com/wp-content/uploads/2022/02/cantarito.jpg"
+        "img": "https://www.muydelish.com/wp-content/uploads/2022/02/cantarito.jpg",
+        "tags": [
+            "tequila"
+        ]
     },
     {
         "label": "Cosmopolitan",
@@ -437,7 +475,10 @@
             "Strain into a chilled martini glass.",
             "Garnish with a lime twist."
         ],
-        "img": "https://www.allrecipes.com/thmb/mxbKU2U9gb1TW6SqEag_z_QCZKg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25845cosmopolitanFranceC4x3-d8c08b86481e4c66a42d0800f9cd7b38.jpg"
+        "img": "https://www.allrecipes.com/thmb/mxbKU2U9gb1TW6SqEag_z_QCZKg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25845cosmopolitanFranceC4x3-d8c08b86481e4c66a42d0800f9cd7b38.jpg",
+        "tags": [
+            "vodka"
+        ]
     },
     {
         "label": "Zombie",
@@ -483,7 +524,10 @@
             "Strain into a tall glass over ice.",
             "Garnish with a cherry and mint sprig."
         ],
-        "img": "https://www.liquor.com/thmb/KOj__Wb6oLwdc4qxCrbCK1c9gG4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Zombie_Cocktail_2667x2667_primary-4416b8395efd4a3986c209371e628e63.jpg"
+        "img": "https://www.liquor.com/thmb/KOj__Wb6oLwdc4qxCrbCK1c9gG4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Zombie_Cocktail_2667x2667_primary-4416b8395efd4a3986c209371e628e63.jpg",
+        "tags": [
+            "rum"
+        ]
     },
     {
         "label": "White Lady",
@@ -508,7 +552,10 @@
             "Shake all ingredients with ice.",
             "Strain into a chilled coupe glass."
         ],
-        "img": "https://www.liquor.com/thmb/gi31h7ZuW4EdEpY4yrPM3CYrZxc=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-lady-720x720-primary-49f8bd47524f4d52be295835a95c51cd.jpg"
+        "img": "https://www.liquor.com/thmb/gi31h7ZuW4EdEpY4yrPM3CYrZxc=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-lady-720x720-primary-49f8bd47524f4d52be295835a95c51cd.jpg",
+        "tags": [
+            "gin"
+        ]
     },
     {
         "label": "Lemon Drop Martini",
@@ -544,7 +591,10 @@
             "Shake vodka, Triple Sec, lemon juice, and simple syrup with ice.",
             "Strain into the prepared glass."
         ],
-        "img": "https://www.simplejoy.com/wp-content/uploads/2023/09/lemon-drop-martini-768x1152.jpg"
+        "img": "https://www.simplejoy.com/wp-content/uploads/2023/09/lemon-drop-martini-768x1152.jpg",
+        "tags": [
+            "vodka"
+        ]
     },
     {
         "label": "Kamikaze",
@@ -569,7 +619,11 @@
             "Shake ingredients with ice.",
             "Strain into a chilled shot glass or cocktail glass."
         ],
-        "img": "https://www.saq.com/media/catalog/product/k/a/kamikaze-ec-1_1610403946.png?optimize=high&fit=bounds&height=&width=&format=jpeg"
+        "img": "https://www.saq.com/media/catalog/product/k/a/kamikaze-ec-1_1610403946.png?optimize=high&fit=bounds&height=&width=&format=jpeg",
+        "tags": [
+            "vodka",
+            "shooter"
+        ]
     },
     {
         "label": "Pink Lady",
@@ -606,6 +660,9 @@
             "Strain into a chilled coupe glass.",
             "Optionally garnish with a cherry or a twist of lemon peel."
         ],
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pink_Lady_with_a_twist_of_lime%2C_in_a_cocktail_glass.jpg/1280px-Pink_Lady_with_a_twist_of_lime%2C_in_a_cocktail_glass.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pink_Lady_with_a_twist_of_lime%2C_in_a_cocktail_glass.jpg/1280px-Pink_Lady_with_a_twist_of_lime%2C_in_a_cocktail_glass.jpg",
+        "tags": [
+            "gin"
+        ]
     }
 ]

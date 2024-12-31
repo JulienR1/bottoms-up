@@ -1,5 +1,5 @@
 import clsx, { ClassValue } from "clsx";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import recipes from "./recipes";
 
@@ -46,6 +46,7 @@ type Recipe = {
   }>;
   steps: Array<string>;
   img: string;
+  tags: Array<string>;
 };
 
 function Sidebar({
@@ -57,8 +58,20 @@ function Sidebar({
   recipes: Array<Recipe>;
   selectRecipe: (recipe: Recipe) => void;
 }) {
-  const [search, setSearch] = useState("");
+  const [showFilters, setShowFilters] = useState(false);
+  const [filters, setFilters] = useState<Array<string>>([]);
   const [collapsed, setCollapsed] = useState(false);
+
+  const tags = useMemo(
+    () =>
+      [
+        ...recipes.reduce((acc, curr) => {
+          curr.tags.forEach((t) => acc.add(t));
+          return acc;
+        }, new Set<string>()),
+      ].sort((a, b) => a.localeCompare(b)),
+    [recipes],
+  );
 
   return (
     <>
@@ -84,31 +97,37 @@ function Sidebar({
         )}
 
         <div className={cn(collapsed ? "hidden md:block" : "block")}>
-          <div className="p-2 flex">
-            <div>
-              <label htmlFor="recipe-search" className="block">
-                Filtrer:
-              </label>
-              <input
-                id="recipe-search"
-                type="search"
-                value={search}
-                onChange={(e) => setSearch(e.currentTarget.value)}
-                className="border-slate-200 border-[1px] rounded w-44"
-              />
-            </div>
-            <div className="block md:hidden">
-              <button className="px-2" onClick={() => setCollapsed(true)}>
-                X
-              </button>
+          <div className="p-2 flex flex-col gap-1">
+            <button onClick={() => setShowFilters((v) => !v)}>
+              <p>Filtres {showFilters ? "^" : "v"}</p>
+            </button>
+
+            <div className={cn("hidden", showFilters && "block")}>
+              {tags.map((tag) => (
+                <div key={tag}>
+                  <input
+                    id={`tag-${tag}`}
+                    type="checkbox"
+                    onChange={(e) => {
+                      const checked = e.currentTarget.checked;
+                      setFilters((previous) =>
+                        checked
+                          ? [...previous, tag]
+                          : previous.filter((t) => t !== tag),
+                      );
+                    }}
+                  />
+                  <label htmlFor={`tag-${tag}`} className="pl-2">
+                    {tag[0].toUpperCase() + tag.slice(1).toLowerCase()}
+                  </label>
+                </div>
+              ))}
             </div>
           </div>
 
           <ul className="grid gap-4 justify-center">
             {recipes
-              .filter((r) =>
-                r.label.toLowerCase().includes(search.toLowerCase()),
-              )
+              .filter((r) => filters.every((f) => r.tags.includes(f)))
               .map((r) => (
                 <li key={r.label}>
                   <button
