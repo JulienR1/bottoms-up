@@ -407,5 +407,205 @@
             "Serve: Garnish as desired, add plenty of ice, and enjoy!"
         ],
         "img": "https://www.muydelish.com/wp-content/uploads/2022/02/cantarito.jpg"
+    },
+    {
+        "label": "Cosmopolitan",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 1.5,
+                "unit": "oz"
+            },
+            {
+                "label": "cranberry juice",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "lime juice",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "triple sec",
+                "quantity": 0.5,
+                "unit": "oz"
+            }
+        ],
+        "steps": [
+            "Shake all ingredients with ice.",
+            "Strain into a chilled martini glass.",
+            "Garnish with a lime twist."
+        ],
+        "img": "https://www.allrecipes.com/thmb/mxbKU2U9gb1TW6SqEag_z_QCZKg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25845cosmopolitanFranceC4x3-d8c08b86481e4c66a42d0800f9cd7b38.jpg"
+    },
+    {
+        "label": "Zombie",
+        "ingredients": [
+            {
+                "label": "light rum",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "dark rum",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "triple sec",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "lime juice",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "grenadine",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "orange juice",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "pineapple juice",
+                "quantity": 1,
+                "unit": "oz"
+            }
+        ],
+        "steps": [
+            "Shake all ingredients with ice.",
+            "Strain into a tall glass over ice.",
+            "Garnish with a cherry and mint sprig."
+        ],
+        "img": "https://www.liquor.com/thmb/KOj__Wb6oLwdc4qxCrbCK1c9gG4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Zombie_Cocktail_2667x2667_primary-4416b8395efd4a3986c209371e628e63.jpg"
+    },
+    {
+        "label": "White Lady",
+        "ingredients": [
+            {
+                "label": "gin",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "triple sec",
+                "quantity": 0.75,
+                "unit": "oz"
+            },
+            {
+                "label": "lemon juice",
+                "quantity": 0.75,
+                "unit": "oz"
+            }
+        ],
+        "steps": [
+            "Shake all ingredients with ice.",
+            "Strain into a chilled coupe glass."
+        ],
+        "img": "https://www.liquor.com/thmb/gi31h7ZuW4EdEpY4yrPM3CYrZxc=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-lady-720x720-primary-49f8bd47524f4d52be295835a95c51cd.jpg"
+    },
+    {
+        "label": "Lemon Drop Martini",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 2,
+                "unit": "oz"
+            },
+            {
+                "label": "triple sec",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "lemon juice",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "simple syrup",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "sugar",
+                "quantity": 0,
+                "unit": "rim glass"
+            }
+        ],
+        "steps": [
+            "Rim the glass with sugar.",
+            "Shake vodka, Triple Sec, lemon juice, and simple syrup with ice.",
+            "Strain into the prepared glass."
+        ],
+        "img": "https://www.simplejoy.com/wp-content/uploads/2023/09/lemon-drop-martini-768x1152.jpg"
+    },
+    {
+        "label": "Kamikaze",
+        "ingredients": [
+            {
+                "label": "vodka",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "triple sec",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "lime juice",
+                "quantity": 1,
+                "unit": "oz"
+            }
+        ],
+        "steps": [
+            "Shake ingredients with ice.",
+            "Strain into a chilled shot glass or cocktail glass."
+        ],
+        "img": "https://www.saq.com/media/catalog/product/k/a/kamikaze-ec-1_1610403946.png?optimize=high&fit=bounds&height=&width=&format=jpeg"
+    },
+    {
+        "label": "Pink Lady",
+        "ingredients": [
+            {
+                "label": "gin",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "applejack",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "grenadine",
+                "quantity": 0.5,
+                "unit": "oz"
+            },
+            {
+                "label": "egg white",
+                "quantity": 1,
+                "unit": "oz"
+            },
+            {
+                "label": "ice",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "steps": [
+            "Combine all ingredients in a cocktail shaker (without ice) and shake vigorously to emulsify the egg white.",
+            "Add ice to the shaker and shake again until well-chilled.",
+            "Strain into a chilled coupe glass.",
+            "Optionally garnish with a cherry or a twist of lemon peel."
+        ],
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pink_Lady_with_a_twist_of_lime%2C_in_a_cocktail_glass.jpg/1280px-Pink_Lady_with_a_twist_of_lime%2C_in_a_cocktail_glass.jpg"
     }
 ]
